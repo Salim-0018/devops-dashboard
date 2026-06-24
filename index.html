@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DevOps Dashboard</title>
+<style>
+body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial;
+}
+
+.header{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.cpu{background:#ef4444;}
+.memory{background:#3b82f6;}
+.docker{background:#06b6d4;}
+.jenkins{background:#f59e0b;}
+.github{background:#22c55e;}
+.build{background:#8b5cf6;}
+
+h2{
+    margin:0;
+    font-size:22px;
+}
+
+.value{
+    font-size:35px;
+    margin-top:10px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+🚀 DevOps Monitoring Dashboard
+</div>
+
+<div class="container">
+
+<div class="card cpu">
+<h2>CPU Usage</h2>
+<div class="value">35%</div>
+</div>
+
+<div class="card memory">
+<h2>Memory</h2>
+<div class="value">60%</div>
+</div>
+
+<div class="card docker">
+<h2>Docker</h2>
+<div class="value">Running</div>
+</div>
+
+<div class="card jenkins">
+<h2>Jenkins</h2>
+<div class="value">Online</div>
+</div>
+
+<div class="card github">
+<h2>GitHub</h2>
+<div class="value">Connected</div>
+</div>
+
+<div class="card build">
+<h2>Build Status</h2>
+<div class="value">SUCCESS</div>
+</div>
+
+</div>
+
+</body>
+</html>
